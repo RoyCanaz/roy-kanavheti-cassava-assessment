@@ -13,19 +13,14 @@ Error
 Solution
 Replaced @PreInsert with @PrePersist
 
-3) electronic-payments-domain
+3)electronic-payments-domain
 Error
 Named query is incorrect. 
 Solution
 When writing a named query, the select query should include the correct classname. Replaced Request with SubscriberRequest.
 
 4)electronic-business-payments
-Error1: Missing econet-utils dependency
 Error2: Sytanx error when calling super method inside constructor.
-
-Solution
-Imported the econet-utils dependency in the pom file.
-Corrected the syntanx error.
 
 5)electronic-business-payments
 Error1: Used subscriberRequestDao.persist() to save SubscriberRequest. The persist() method is not defined in subscriberRequestDao repository.
@@ -38,24 +33,19 @@ Used the save() of subscriberRequestDao repository to save/insert and update Sub
 Error1: persist method not found
 Error2: update methos not found
 
-7)electronic-payments-api
-Error2: Request Interceptor Error. and instead of (&&)
-Solution: replaced and with &&
-
-8)log4j2.xml Error
+7)log4j2.xml Error
 Error1: log path error
 Solution: Fixed the configuration
 
-
   
-9)intelligent-network-api
+8)intelligent-network-api
 log4j dependencies not found, however added log4j in pom file with the same version as parent module.
 path variable partnerCode was not passed as parameter on method enquireAirtimeBalance. However added the path variable
 
-11)electronic-payments-api
+9)electronic-payments-api
 Added @Autowired annotation in EpayResource for EpayRequestProcessor & ReportingProcessor
 
-12)intelligent-network-api
+10)intelligent-network-api
 partnerCode parameter not annotated
 
 

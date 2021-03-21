@@ -19,7 +19,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class TestUtility {
-    public static final Double BALANCE = 200.0;
+    public static final Double BALANCE = 10.0;
     public static final Answer<SubscriberRequest> SUBSCRIBER_REQUEST = invocationOnMock -> {
         Object[] arguments = invocationOnMock.getArguments();
         if (arguments != null && arguments.length > 0) {
